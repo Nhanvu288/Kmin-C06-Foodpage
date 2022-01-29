@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --red: rgba(254, 4, 60, 1);
+    --skin: rgba(255, 245, 236, 1);
+    --purple: rgba(46, 38, 111, 1);
+    --white: white;
+    --font-weight: 400;
+    --lineheight: 24px;
+    --fontsize: 16px;
+}
+
+html {
+    width: 1920px;
+    height: 1048px;
+}
+body {
+    /* width: 1920px;
+    height: 1048px; */
+    background-color: var(--skin);
+    position: relative;
+}
+
+.side {
+    position: absolute;
+    top: -22px;
+    left: 1406px;
+    z-index: -2;
+    width: 514px;
+    height: 1210px;
+    background-color: var(--red);
+    color: var(--red);
+}
+
+/* .red {
+    background: rgba(254, 4, 60, 1);
+    color: rgba(254, 4, 60, 1);
+} */
+/* 
+.skin {
+    color: skin;
+    font-weight: 400;
+    line-height: 24px;
+} */
+
+/* .title {
+    color: rgba(46, 38, 111, 1);
+} */
+header {
+    /* position: absolute; */
+    /* top: 20px; */
+    /* left: 133px; */
+
+    margin-top: 20px;
+    margin-left: 133px;
+    width: 1652px;
+    height: 108px;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+
+#logo {
+    background: none;
+    font-weight: 700;
+    text-align: center;
+    width: 245px;
+    height: 108px;
+    font-size: 72px;
+    color: var(--red);
+}
+
+.list {
+    list-style-type: none;
+}
+ 
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.menu {
+    width: 490px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    /* position: absolute;
+    top: 47px;
+    left: 455px; */
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 47px;
+    margin-left: 200px;
+    color: var(--purple);
+}
+
+#user_panel {
+    margin: 33px 0 23px 603px;
+    width: 114px;
+    /* height: 52px; */
+    /* position: absolute; */
+    /* top: 33px; */
+    display: inline-block;
+    /* position: relative; */
+}
+
+.txt {
+    color: var(--skin);
+    font-weight: var(--font-weight);
+    font-size: var(--fontsize);
+    line-height: var(--lineheight);
+    text-align: center;
+
+}
+
+#user-icon {
+    position: relative;
+    display: inline-block;
+    /* width: 52px; */
+}
+
+.icon {
+    border-radius: 50%;
+    width: 30px;
+    /* height: 41px; */
+    background: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px;
+    font-size: 30px;
+    display: inline-block;
+}
+
+
+
+.online-dot {
+    right: 1px;
+    top: 0;
+    background-color: rgba(49, 162, 76, 1);
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    /* Mặc dù theo đúng tỉ lệ trong figma nhưng nhỏ quá */
+}
+
+.user-txt {
+    display: inline-block;
+    /* width: 53px; */
+    position: relative;
+    margin-left: 1px;
+}
+
+.txt {
+    font-size: 16px;
+    width: 36px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 3px;
+    margin-left: 7px;
+    /* width: 10px;
+    height: 4.4px; */
+    /* transform: rotate(45deg);
+     */
+     transform: rotate(0.5turn);
+    -webkit-transform: rotate(45deg);
+}
+
+#main{
+    display: flex;
+}
+
+#main-content{
+    width: 760px;
+    /* background-color: violet; */
+    margin: 130px 65px auto 124px;
+    padding: 0;
+    /* position: relative; */
+
+}
+
+/* #food {
+} */
+.food {
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 300px;
+    width: 506px;
+    text-transform: capitalize;
+    opacity: 0.05;
+    position: relative;
+    top: -60px;
+    color: var(--purple);
+}
+
+/* Discover Restaurant & Delicious Food */
+.discover {
+    width: 757px;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 90px;
+    text-transform: capitalize;
+    position: relative;
+    top: -140px;
+    color: var(--purple);
+}
+.search-button {
+    padding: 0px;
+    position: relative;
+    bottom: 100px;
+}
+.text-box {
+    padding: 0px 50px;
+    font-size: 18px;
+    line-height: 90px;
+    opacity: 0.6;    
+    align-items: center;
+    text-transform: capitalize;
+    font-weight: var(--font-weight);
+    border: 0;
+    background-color: white;
+}
+
+.button {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 72px;
+    color: var(--white);
+    align-items: center;
+    text-align: center;
+text-transform: uppercase;
+    width: 200px;
+    background-color: var(--red);
+    border-radius: 70px 0 0;
+    position: absolute;
+    z-index: 2;
+    top: 9px;
+    right: 73px;
+}
+
+#vector{
+    margin-top: 74px;
+    margin-left: 10px;
+}
+
+.vector{
+    display: flex;
+    flex-direction: column;
+    z-index: -2;
+}
+
+.vector-2{
+    margin-top: 25px;
+}
+
+#image{
+    position: relative;
+    right: 344px;
+    height: 870px;
+}
+.img-1 {
+    width: 584px;
+    height: 900px;  
+    position: relative;
+    left: 96px;
+    bottom: 145px;
+}
+
+.img-2 {
+    z-index: 3;
+    width: 878px;
+    height: 870px;
+    position: relative;
+    bottom: 859px;
+    right: 115px;
+}
+
+#place {
+    background-color: var(--red);
+    width: 280px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    font-size: 30px;
+    line-height: 65px;
+    font-weight: 500;
+    color: var(--white);
+    border-radius: 0 50px 50px 0;
+    top: 892px;
+}
+
+#place i {
+    margin-right: 12px;
+}
+
+#carousel {
+    position: absolute;
+    right: 135px;
+    top: 971px;
+    display: flex;
+    width: 172px;
+    justify-content: space-between;
+}
+
+.carousel {
+    width: 66px;
+    height: 45px;
+}
